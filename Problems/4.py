@@ -1,0 +1,10 @@
+inF = open('input.txt','r')
+outF = open('output.txt','w')
+c = inF.read()
+array = c.split()
+a = int(array[0])
+s = [a,9,9-a]
+s =''.join(str(e) for e in s)
+print(s,file=outF)
+inF.close()
+outF.close()
